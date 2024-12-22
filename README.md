@@ -18,4 +18,4 @@ This project is a custom accordion implementation designed for displaying Freque
 ## Setup and Usage
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/custom-accordion.git
+   git clone https://github.com/TAJAMUL11/Dynamic_Accordion.git
