@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Accordion</title>
+    <meta
+      name="description"
+      content="A beautiful accordion which allows user to check FAQ and add new accordions"
+    />
+    <meta name="keywords" content="Accordion, FAQ, Check" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="mainContainer">
+      <div class="headingMain">
+        <h1>Frequently Asked Questions</h1>
+        <button id="addAccordionButton">Add Accordion</button>
+        <div id="noAccordionMessage" class="accordion-message">
+          No more accordions. Add one now!
+        </div>
+      </div>
+
+      <div class="accordion-container">
+        <div class="accordion">
+          <div class="accordion-header">What's the catch?</div>
+          <div class="accordion-body">
+            We're committed to providing high-quality products and excellent
+            customer service. Our goal is to build long-term relationships with
+            our customers.
+          </div>
+          <button class="remove-accordion">Remove</button>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">Is it safe?</div>
+          <div class="accordion-body">
+            We take security very seriously. Our website uses the latest
+            encryption technology to protect your personal information.
+          </div>
+          <button class="remove-accordion">Remove</button>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">How does it work?</div>
+          <div class="accordion-body">
+            Simply browse our products, add them to your cart, and proceed to
+            checkout. We'll handle the rest!
+          </div>
+          <button class="remove-accordion">Remove</button>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">Do you ship internationally?</div>
+          <div class="accordion-body">
+            Yes, we ship to many countries worldwide. Please refer to our
+            shipping policy for more details.
+          </div>
+          <button class="remove-accordion">Remove</button>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">What's your return policy?</div>
+          <div class="accordion-body">
+            We offer a hassle-free return policy for most items. Please see our
+            return policy for complete details.
+          </div>
+          <button class="remove-accordion">Remove</button>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">Can I cancel my order?</div>
+          <div class="accordion-body">
+            You can cancel your order as long as it hasn't been shipped yet.
+            Please contact us immediately if you need to cancel your order.
+          </div>
+          <button class="remove-accordion">Remove</button>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">Do you offer discounts?</div>
+          <div class="accordion-body">
+            We offer various discounts throughout the year, including seasonal
+            sales, special promotions, and loyalty programs.
+          </div>
+          <button class="remove-accordion">Remove</button>
+        </div>
+      </div>
+
+      <div id="addAccordionModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Add Accordion</h2>
+          <form id="addAccordionForm">
+            <label for="accordionTitle">Title:</label>
+            <input type="text" id="accordionTitle" name="title" required />
+            <label for="accordionContent">Content:</label>
+            <textarea id="accordionContent" name="content" required></textarea>
+            <button type="submit">Add</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
